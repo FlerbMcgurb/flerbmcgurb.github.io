@@ -1,34 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="code.ico" type="image/ico"/>
+<title>
+Jordacious Development
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+ 
+    
+<header>
     <style type="text/css">
 		body {
 			background-color: white;
 			transition: background-color 7s;
 		}
 	</style>
-	<title>MEMES</title>
-	<img height="87.75" width="95.5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Watermelon.svg/2000px-Watermelon.svg.png">	
-	
-	<body>
-	<script type="text/javascript">
-		var colors = ["white", "red", "orange", "yellow", "green", "blue", "indigo", "violet", "black"];
 
-		var i = 1;
+</header>
+<div id="floatbutton">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<div align="center" id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div>
+  
+<button class="button button13" onclick="">Help</button>  
 
-		window.setInterval(function(){
-			document.body.style.backgroundColor = colors[i];
-			i++;
-			if (i === colors.length){
-				i=0;
-			}
-		}, 5000);
-	</script>
-</body>
-	
-	</head>	
-	
-	<div align="right">
-	<img height="400" width="314" src="https://img.clipartfest.com/7a9a338eda75149324596f20128b9938_if-something-is-a-piece-of-cool-as-a-cucumber-clipart_157-200.png">
-	</div>
+<button class="button button13" onclick="">Information</button>
+
+<button class="button button13" onclick="myFunction2()">Search</button>
+
+<button class="button button13" onclick="">Meme Archive</button>
+
+<button class="button button13" onclick="">Saved Files</button>
+
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function myFunction4() {
+    document.getElementById("myImg").src = "githubwhite.png";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+function firstFunction() {
+      document.body.style.backgroundColor = "black"; 
+}
+function secondFunction() {
+      document.body.style.backgroundColor = "white"; 
+}
+function myFunction() {
+    alert("Not all settings work. As it says, these are in BETA.");
+}
+function myFunction2() {
+    alert("Sorry, the Facebook link is not setup yet.");
+}
+function myFunction3() {
+    alert("Sorry, the YouTube link is not setup yet.");
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+    <title>QNimate Slider</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-holder">
+            <img src="https://www.ssbwiki.com/images/d/d6/MultiShine.gif" class="slider-image" />
+            <img src="https://media.giphy.com/media/WrVOtWEay7fJS/200.gif" class="slider-image" />
+            <img src="https://m.popkey.co/4da840/5eoXO_s-200x150.gif?c=popkey-web&p=starbucks&i=frappuccino-brands&l=search&f=.gif" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+    </div>
+<style>
+     .slider-holder
+        {
+            width: 800px;
+            height: 400px;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .image-holder
+        {
+            width: 2400px;
+            background-color: red;
+            height: 400px;
+            clear: both;
+            position: relative;
+            
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+        
+        .slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        #slider-image-1:target ~ .image-holder
+        {
+            left: 0px;
+        }
+        
+        #slider-image-2:target ~ .image-holder
+        {
+            left: -800px;
+        }
+        
+        #slider-image-3:target ~ .image-holder
+        {
+            left: -1600px;
+        }
+        
+        .button-holder
+        {
+            position: relative;
+            top: -20px;
+        }
+        
+        .slider-change
+        {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: brown;
+        }
+</style>
+
+</div>
+
+<br>
+<div align="center">
+<img src="https://media.giphy.com/media/WrVOtWEay7fJS/200.gif" alt="lol" height="42" width="42">
+
+<div align="middle">
+<p>Hosted by Github<br>Coded By Jordacious and FlerbMcGurb</p>
+</div>
 </html>
